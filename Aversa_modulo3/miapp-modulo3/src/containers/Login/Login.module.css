@@ -1,0 +1,18 @@
+.containerLogin {
+	width: 30%;
+	background-color: white;
+	border-radius: 1rem;
+}
+
+.input {
+	border: 0;
+	border-bottom: 1px solid #808080;
+	background-color: #e6e6e6;
+	border-radius: 0.25rem 0.25rem 0 0;
+	transition: all 0.3s;
+}
+
+.input:focus {
+	background-color: #e6e6e6;
+	border-bottom: 1px solid #007bff;
+}
