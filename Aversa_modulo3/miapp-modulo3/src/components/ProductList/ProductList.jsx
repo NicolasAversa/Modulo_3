@@ -4,11 +4,13 @@ import { useFirestoreCollectionData, useFirestore } from "reactfire";
 import ProductItem from "./ProductItem/ProductItem.jsx";
 
 const ProductList = () => {
-	const usersRef = useFirestore().collection("users");
-	const users = useFirestoreCollectionData(usersRef);
+  const productsRef = useFirestore().collection("products");
+  const products = useFirestoreCollectionData(productsRef);
 
-	const list = users.map((user) => <ProductItem key={user.id} value={user} />);
-	return <>{list}</>;
+  const list = products.map((product) => (
+    <ProductItem key={product.id} value={product} />
+  ));
+  return <>{list}</>;
 };
 
 export default ProductList;
